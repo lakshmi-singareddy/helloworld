@@ -1,7 +1,7 @@
-version: 2
+ version: 2
  jobs: # we now have TWO jobs, so that a workflow can coordinate them!
-   one: # This is our first job.
-     docker: # it uses the docker executor
+    one: # This is our first job.
+      docker: # it uses the docker executor
        - image: circleci/classic:edge # specifically, a docker image with ruby 2.4.1
      # Steps are a list of commands to run inside the docker container above.
      steps:
